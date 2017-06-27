@@ -38,4 +38,10 @@ class AppManager: NSObject {
         
         return vc as? T ?? nil
     }
+    
+    // MARK: == 得到当前App的版本
+    static func getCurentAppVersion() -> String {
+        return "\(Bundle.main.infoDictionary!["CFBundleShortVersionString"]!)"
+    }
+    
 }

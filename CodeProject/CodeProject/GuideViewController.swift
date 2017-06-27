@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  GuideViewController.swift
 //  CodeProject
 //
 //  Created by Apple on 2017/6/26.
@@ -8,10 +8,11 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+class GuideViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 
 }

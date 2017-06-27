@@ -8,6 +8,7 @@
 
 import Foundation
 
+let appStoreUrl = ""
 
 #if DEBUG
     

@@ -23,6 +23,10 @@
 		1888D13E1F00AD1300789723 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888D13D1F00AD1300789723 /* ShopViewController.swift */; };
 		1888D1401F00AD2200789723 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888D13F1F00AD2200789723 /* MeViewController.swift */; };
 		1888D1421F00AD3100789723 /* DiscouverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888D1411F00AD3100789723 /* DiscouverViewController.swift */; };
+		1888D1451F00BB4A00789723 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888D1441F00BB4A00789723 /* GuideViewController.swift */; };
+		1888D1471F00BB7F00789723 /* CheckAppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888D1461F00BB7F00789723 /* CheckAppVersion.swift */; };
+		1888D14C1F00D53000789723 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888D14B1F00D53000789723 /* MBProgressHUD.m */; };
+		1888D14E1F00D5ED00789723 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888D14D1F00D5ED00789723 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,12 @@
 		1888D13D1F00AD1300789723 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		1888D13F1F00AD2200789723 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		1888D1411F00AD3100789723 /* DiscouverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscouverViewController.swift; sourceTree = "<group>"; };
+		1888D1441F00BB4A00789723 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		1888D1461F00BB7F00789723 /* CheckAppVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckAppVersion.swift; sourceTree = "<group>"; };
+		1888D1491F00D52F00789723 /* CodeProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		1888D14A1F00D53000789723 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1888D14B1F00D53000789723 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1888D14D1F00D5ED00789723 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,7 @@
 		1888D0F41F00AA4D00789723 /* CodeProject */ = {
 			isa = PBXGroup;
 			children = (
+				1888D1481F00D51800789723 /* Lib */,
 				1888D1431F00B68F00789723 /* CommonViews */,
 				1888D1361F00AC8200789723 /* Config */,
 				1888D1271F00AB0100789723 /* Module */,
@@ -176,6 +187,8 @@
 		1888D1261F00AAFA00789723 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1888D1441F00BB4A00789723 /* GuideViewController.swift */,
+				1888D1461F00BB7F00789723 /* CheckAppVersion.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -194,6 +207,7 @@
 		1888D1361F00AC8200789723 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				1888D1491F00D52F00789723 /* CodeProject-Bridging-Header.h */,
 				1888D1291F00ABF800789723 /* OtherData.swift */,
 				1888D12A1F00ABF800789723 /* ConfigApp.swift */,
 				1888D12B1F00ABF800789723 /* RequestPort.swift */,
@@ -236,8 +250,26 @@
 		1888D1431F00B68F00789723 /* CommonViews */ = {
 			isa = PBXGroup;
 			children = (
+				1888D14D1F00D5ED00789723 /* AlertView.swift */,
 			);
 			name = CommonViews;
+			sourceTree = "<group>";
+		};
+		1888D1481F00D51800789723 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				1888D14F1F00DD3900789723 /* MBPRogressHub */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		1888D14F1F00DD3900789723 /* MBPRogressHub */ = {
+			isa = PBXGroup;
+			children = (
+				1888D14A1F00D53000789723 /* MBProgressHUD.h */,
+				1888D14B1F00D53000789723 /* MBProgressHUD.m */,
+			);
+			name = MBPRogressHub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +341,7 @@
 					1888D0F11F00AA4D00789723 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = HTNXAHSMUA;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					1888D1051F00AA4D00789723 = {
@@ -383,10 +416,14 @@
 				1888D12F1F00ABF800789723 /* RequestPort.swift in Sources */,
 				1888D12C1F00ABF800789723 /* AppManager.swift in Sources */,
 				1888D1401F00AD2200789723 /* MeViewController.swift in Sources */,
+				1888D14C1F00D53000789723 /* MBProgressHUD.m in Sources */,
 				1888D13C1F00AD0700789723 /* HomeViewController.swift in Sources */,
 				1888D1351F00AC5400789723 /* BaseViewController.swift in Sources */,
 				1888D1331F00AC5400789723 /* BaseNavigationViewController.swift in Sources */,
 				1888D0F61F00AA4D00789723 /* AppDelegate.swift in Sources */,
+				1888D1471F00BB7F00789723 /* CheckAppVersion.swift in Sources */,
+				1888D14E1F00D5ED00789723 /* AlertView.swift in Sources */,
+				1888D1451F00BB4A00789723 /* GuideViewController.swift in Sources */,
 				1888D1341F00AC5400789723 /* BaseTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,11 +570,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = HTNXAHSMUA;
 				INFOPLIST_FILE = CodeProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edisondu.CodeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeProject/CodeProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -546,11 +586,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = HTNXAHSMUA;
 				INFOPLIST_FILE = CodeProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edisondu.CodeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeProject/CodeProject-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -632,6 +674,7 @@
 				1888D11C1F00AA4E00789723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1888D11D1F00AA4E00789723 /* Build configuration list for PBXNativeTarget "CodeProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -640,6 +683,7 @@
 				1888D11F1F00AA4E00789723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1888D1201F00AA4E00789723 /* Build configuration list for PBXNativeTarget "CodeProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -648,6 +692,7 @@
 				1888D1221F00AA4E00789723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
