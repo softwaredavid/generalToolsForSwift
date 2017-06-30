@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		182712591F063CEC006E0104 /* 4-8_已认证_PxCook.png in Resources */ = {isa = PBXBuildFile; fileRef = 182712581F063CEC006E0104 /* 4-8_已认证_PxCook.png */; };
 		1870E2891F0342CC00FF1FB6 /* AppNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870E2881F0342CC00FF1FB6 /* AppNet.swift */; };
 		1870E68B1F0380E900FF1FB6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1870E67E1F0380CA00FF1FB6 /* Alamofire.framework */; };
 		1870E68C1F0380E900FF1FB6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1870E67E1F0380CA00FF1FB6 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -121,7 +120,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		182712581F063CEC006E0104 /* 4-8_已认证_PxCook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-8_已认证_PxCook.png"; sourceTree = "<group>"; };
 		1870E2881F0342CC00FF1FB6 /* AppNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNet.swift; sourceTree = "<group>"; };
 		1870E6721F0380C900FF1FB6 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		1888D0F21F00AA4D00789723 /* CodeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,7 +195,6 @@
 		1888D0E91F00AA4D00789723 = {
 			isa = PBXGroup;
 			children = (
-				182712581F063CEC006E0104 /* 4-8_已认证_PxCook.png */,
 				1888D0F41F00AA4D00789723 /* CodeProject */,
 				1888D1091F00AA4D00789723 /* CodeProjectTests */,
 				1888D1141F00AA4E00789723 /* CodeProjectUITests */,
@@ -539,7 +536,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1888D1001F00AA4D00789723 /* LaunchScreen.storyboard in Resources */,
-				182712591F063CEC006E0104 /* 4-8_已认证_PxCook.png in Resources */,
 				1888D0FD1F00AA4D00789723 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

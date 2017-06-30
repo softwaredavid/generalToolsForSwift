@@ -44,4 +44,29 @@ class AppManager: NSObject {
         return "\(Bundle.main.infoDictionary!["CFBundleShortVersionString"]!)"
     }
     
+    // MARk: ==版本升级
+    static func upgradeApp() {
+        AppNet.post(url: appStoreUrl,header: ["Content-Type":"text/html; charset=UTF-8"]) { (dic, any) in
+            guard let result = dic?["results"] as? [[String:Any]] else { return }
+            if dic!.count > 0 {
+                var releaseNotes = ""
+                if let str = result[0]["releaseNotes"] as? String {
+                    releaseNotes = str
+                }
+                let v = getCurentAppVersion()
+                let appStor = "\(String(describing: result[0]["version"]!))"
+                
+                if Int(v.replacingOccurrences(of: ".", with: ""))! < Int(appStor.replacingOccurrences(of: ".", with: ""))! {
+                    
+                } else {
+                    
+                }
+            }
+            
+        }
+        
+    }
+    
 }
+
+
