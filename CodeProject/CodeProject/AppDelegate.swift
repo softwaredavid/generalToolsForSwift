@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-    private func configureAlamofireManager() {
+    private func configureAlamofireManager() { //配置https证书验证
         //认证相关设置
         let manager = Alamofire.SessionManager.default
         manager.delegate.sessionDidReceiveChallenge = { session, challenge in

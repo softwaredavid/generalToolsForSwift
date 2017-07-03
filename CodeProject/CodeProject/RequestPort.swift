@@ -8,7 +8,7 @@
 
 import Foundation
 
-let appStoreUrl = "https://itunes.apple.com/cn/app/%E4%B9%90%E9%81%93%E6%B8%B8/id1220810675?mt=8"
+let appStoreUrl = "https://itunes.apple.com/cn/lookup?id=1220810675"
 
 #if DEBUG
     

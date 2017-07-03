@@ -39,16 +39,25 @@ class AppManager: NSObject {
         return vc as? T ?? nil
     }
     
+    // MARK: == 得到沙盒路径
+    static func getSandboxPath(path: String) -> URL? {
+        
+        let p = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last
+        guard let _ = p else { return nil }
+        let pUrl = URL(string: p!)
+        return pUrl?.appendingPathComponent(path)
+    }
+    
     // MARK: == 得到当前App的版本
     static func getCurentAppVersion() -> String {
         return "\(Bundle.main.infoDictionary!["CFBundleShortVersionString"]!)"
     }
     
-    // MARk: ==版本升级
-    static func upgradeApp() {
-        AppNet.post(url: appStoreUrl,header: ["Content-Type":"text/html; charset=UTF-8"]) { (dic, any) in
+    // MARk: ==  版本升级
+    static func upgradeApp(complete: @escaping ((String?, Bool)->Void)) {
+        AppNet.post(url: appStoreUrl,header: ["Content-Type":"application/json"]) { (dic, any) in
             guard let result = dic?["results"] as? [[String:Any]] else { return }
-            if dic!.count > 0 {
+            if result.count > 0 {
                 var releaseNotes = ""
                 if let str = result[0]["releaseNotes"] as? String {
                     releaseNotes = str
@@ -57,16 +66,13 @@ class AppManager: NSObject {
                 let appStor = "\(String(describing: result[0]["version"]!))"
                 
                 if Int(v.replacingOccurrences(of: ".", with: ""))! < Int(appStor.replacingOccurrences(of: ".", with: ""))! {
-                    
+                    complete(releaseNotes, true)
                 } else {
-                    
+                    complete(nil, false)
                 }
             }
-            
         }
-        
     }
-    
 }
 
 

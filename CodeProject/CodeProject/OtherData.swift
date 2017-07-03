@@ -15,3 +15,5 @@ let screen_heigh = UIScreen.main.bounds.size.height
 
 //MRAK: =====  沙盒存储 ========
 
+let userDefault = UserDefaults.standard
+
