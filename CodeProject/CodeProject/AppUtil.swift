@@ -11,8 +11,17 @@ import UIKit
 class AppUtil: NSObject {
     
     // MARK: ----- 验证某个字符是否符合某个规则
-    func verifyText(regular: String, text: String) -> Bool {
+    static func verifyText(regular: String, text: String) -> Bool {
         let b = NSPredicate(format: "SELF MATCHES %@", regular)
         return b.evaluate(with: text)
     }
+    // MARK: ---------拨打电话
+    static func callPhone(phone: String) {
+        let web = UIWebView()
+        let str = "tel:" + phone
+        let urlRequest = URLRequest(url: URL(string: str)!)
+        web.loadRequest(urlRequest as URLRequest)
+        UIApplication.shared.keyWindow?.addSubview(web)
+    }
+    // MARK: ---------富文本
 }

@@ -10,30 +10,29 @@ import UIKit
 
 class CheckAppVersion: NSObject {
     
-    static func checkAppVersion(handler: @escaping ((_ data: String?) -> Void)) {
-        
-       /* RequestForSwift.shared.post(url: appStoreUrl, success: { response in
-            print(response)
-            guard let results = (response as! [String:Any])["results"] as? [[String:Any]]else {
-                return
-            }
-            if results.count > 0 {
+    // MARK: == 得到当前App的版本
+    static func getCurentAppVersion() -> String {
+        return "\(Bundle.main.infoDictionary!["CFBundleShortVersionString"]!)"
+    }
+    
+    // MARk: ==  版本升级
+    static func upgradeApp(complete: @escaping ((String?, Bool)->Void)) {
+        AppNet.post(url: appStoreUrl,header: ["Content-Type":"application/json"]) { (dic, any) in
+            guard let result = dic?["results"] as? [[String:Any]] else { return }
+            if result.count > 0 {
                 var releaseNotes = ""
-                if let str = results[0]["releaseNotes"] as? String {
+                if let str = result[0]["releaseNotes"] as? String {
                     releaseNotes = str
                 }
-                let v = "\(Bundle.main.infoDictionary!["CFBundleShortVersionString"]!)"
-                let appStor = "\(String(describing: results[0]["version"]!))"
+                let v = getCurentAppVersion()
+                let appStor = "\(String(describing: result[0]["version"]!))"
                 
                 if Int(v.replacingOccurrences(of: ".", with: ""))! < Int(appStor.replacingOccurrences(of: ".", with: ""))! {
-                    handler(releaseNotes)
+                    complete(releaseNotes, true)
                 } else {
-                    handler(nil)
+                    complete(nil, false)
                 }
             }
-        }) { error in
-         UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/cn/app/%E4%B9%90%E9%81%93%E6%B8%B8/id1220810675?mt=8")!)
-            
-        }*/
+        }
     }
 }

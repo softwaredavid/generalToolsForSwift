@@ -8,10 +8,15 @@
 
 import UIKit
 
-class BaseNavigationViewController: UINavigationController {
+class BaseNavigationViewController: UINavigationController,UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.barTintColor = mainThemeColor
+        interactivePopGestureRecognizer?.isEnabled = true
+        interactivePopGestureRecognizer?.delegate = self
+    }
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return viewControllers.count > 1
     }
 }

@@ -104,6 +104,17 @@ class HomeViewController: BaseViewController {
 //        //m.updateTable(name: "appstate", key: ["1"], value: ["世界"])
 //        m.clearTable(name: "appstate")
         
+        
+        let btn = UIButton(type: .system)
+        btn.frame = CGRect(x: 100, y: 100, width: 50, height: 50)
+        btn.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
+        view.addSubview(btn)
+        
+    }
+    func btnClick() {
+        let s = AppManager.getViewController(storyBoard: "Storyboard", identify: "store") as! SecViewController
+        navigationController?.pushViewController(s, animated: true)
     }
 
 }
