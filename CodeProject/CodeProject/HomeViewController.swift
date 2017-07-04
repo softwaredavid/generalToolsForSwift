@@ -56,14 +56,54 @@ class HomeViewController: BaseViewController {
          
          }
          
+         let b = NSPredicate(format: "SELF MATCHES %@", phone)
+         let v = b.evaluate(with: "1703715338")
+         
+         var s = DateManager.getAfterDate(date: Date(),  hour: 1)
+         
+         var m = DateManager.firstWeekInTheMonth(date: Date())
+         
+          let s = DateManager.getDateFrom(dateString: "2017-07-04 05:05:05")
+         let d = DateManager.getAfterDate(date: Date(), second: 28)
+         print(d)
+         print(Date())
+         let g = DateManager.getTimeInterval(date1: d!, date2: Date())
+         print(g)
+
+         DateManager.timeDown(second: 10, excue: { (date) in
+         print("hhhh")
+         }) {
+         print("结束了")
+         }
+         
+         DateManager.timeDown(second: 5, excue: { (date) in
+         print("ren re")
+         }) {
+         print("结束了")
+         
+         TimeUtil().timeDown(second: 5, excue: { (min) in
+         print("1111" + "\(min)")
+         }) {
+         
+         }
+         
+         TimeUtil().timeDown(second: 10, excue: { (m) in
+         print("2222" + "\(m)")
+         }) {
+         
+         }
+
+         }
          */
         
-       let wek =  DateManager.getHoursFromDate(date: Date())
+//       let wek =  DateManager.getHoursFromDate(date: Date())
+//        
+//        let m = FMDBManager.shareFMDBManager
         
-        let m = FMDBManager.shareFMDBManager
-        m.createTable(name: "appstate")
-        //m.updateTable(name: "appstate", key: ["1"], value: ["世界"])
-        m.clearTable(name: "appstate")
+//        m.createTable(name: "appstate")
+//        //m.updateTable(name: "appstate", key: ["1"], value: ["世界"])
+//        m.clearTable(name: "appstate")
+        
     }
 
 }

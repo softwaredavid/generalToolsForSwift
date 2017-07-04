@@ -43,9 +43,11 @@
 		182C2F201F09F51300849C32 /* FMDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C2F1F1F09F51300849C32 /* FMDBManager.swift */; };
 		182C2F231F0A248100849C32 /* SudokuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C2F221F0A248100849C32 /* SudokuView.swift */; };
 		182C2F251F0A302F00849C32 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C2F241F0A302F00849C32 /* DateManager.swift */; };
+		182C2F271F0A3EC800849C32 /* AppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C2F261F0A3EC800849C32 /* AppUtil.swift */; };
 		1870E2891F0342CC00FF1FB6 /* AppNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870E2881F0342CC00FF1FB6 /* AppNet.swift */; };
 		1870E68B1F0380E900FF1FB6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1870E67E1F0380CA00FF1FB6 /* Alamofire.framework */; };
 		1870E68C1F0380E900FF1FB6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1870E67E1F0380CA00FF1FB6 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		187DC2001F0B431700D8D4E3 /* TimeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC1FF1F0B431700D8D4E3 /* TimeUtil.swift */; };
 		1888D0F61F00AA4D00789723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888D0F51F00AA4D00789723 /* AppDelegate.swift */; };
 		1888D0FD1F00AA4D00789723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1888D0FC1F00AA4D00789723 /* Assets.xcassets */; };
 		1888D1001F00AA4D00789723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1888D0FE1F00AA4D00789723 /* LaunchScreen.storyboard */; };
@@ -225,8 +227,10 @@
 		182C2F1F1F09F51300849C32 /* FMDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDBManager.swift; sourceTree = "<group>"; };
 		182C2F221F0A248100849C32 /* SudokuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudokuView.swift; sourceTree = "<group>"; };
 		182C2F241F0A302F00849C32 /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		182C2F261F0A3EC800849C32 /* AppUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
 		1870E2881F0342CC00FF1FB6 /* AppNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNet.swift; sourceTree = "<group>"; };
 		1870E6721F0380C900FF1FB6 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		187DC1FF1F0B431700D8D4E3 /* TimeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUtil.swift; sourceTree = "<group>"; };
 		1888D0F21F00AA4D00789723 /* CodeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1888D0F51F00AA4D00789723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1888D0FC1F00AA4D00789723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -386,14 +390,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		182C2F211F0A245600849C32 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				182C2F221F0A248100849C32 /* SudokuView.swift */,
-			);
-			name = view;
-			sourceTree = "<group>";
-		};
 		1870E6731F0380C900FF1FB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -432,7 +428,6 @@
 		1888D0F41F00AA4D00789723 /* CodeProject */ = {
 			isa = PBXGroup;
 			children = (
-				182C2F211F0A245600849C32 /* view */,
 				1888D1481F00D51800789723 /* Lib */,
 				1888D1431F00B68F00789723 /* CommonViews */,
 				1888D1361F00AC8200789723 /* Config */,
@@ -481,6 +476,8 @@
 				1870E2881F0342CC00FF1FB6 /* AppNet.swift */,
 				182C2F1F1F09F51300849C32 /* FMDBManager.swift */,
 				182C2F241F0A302F00849C32 /* DateManager.swift */,
+				182C2F261F0A3EC800849C32 /* AppUtil.swift */,
+				187DC1FF1F0B431700D8D4E3 /* TimeUtil.swift */,
 			);
 			name = Utilty;
 			sourceTree = "<group>";
@@ -561,6 +558,7 @@
 		1888D1431F00B68F00789723 /* CommonViews */ = {
 			isa = PBXGroup;
 			children = (
+				182C2F221F0A248100849C32 /* SudokuView.swift */,
 				1888D14D1F00D5ED00789723 /* AlertView.swift */,
 			);
 			name = CommonViews;
@@ -792,6 +790,7 @@
 				182C2F181F09F09300849C32 /* FMDatabasePool.m in Sources */,
 				1888D1421F00AD3100789723 /* DiscouverViewController.swift in Sources */,
 				1888D12D1F00ABF800789723 /* OtherData.swift in Sources */,
+				182C2F271F0A3EC800849C32 /* AppUtil.swift in Sources */,
 				182C2F1A1F09F09300849C32 /* FMResultSet.m in Sources */,
 				182C2EE11F09EB2700849C32 /* SDImageCache.m in Sources */,
 				182C2F061F09EDBC00849C32 /* SDCollectionViewCell.m in Sources */,
@@ -825,6 +824,7 @@
 				182C2F081F09EDBC00849C32 /* UIView+SDExtension.m in Sources */,
 				182C2F161F09F09300849C32 /* FMDatabase.m in Sources */,
 				182C2EE81F09EB2700849C32 /* SDWebImagePrefetcher.m in Sources */,
+				187DC2001F0B431700D8D4E3 /* TimeUtil.swift in Sources */,
 				182C2EEC1F09EB2700849C32 /* UIImage+WebP.m in Sources */,
 				182C2EE71F09EB2700849C32 /* SDWebImageManager.m in Sources */,
 				1888D1331F00AC5400789723 /* BaseNavigationViewController.swift in Sources */,
