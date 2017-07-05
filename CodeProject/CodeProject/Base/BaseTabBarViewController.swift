@@ -31,7 +31,7 @@ class BaseTabBarViewController: UITabBarController {
     
     private func addChildViewController(para: TabBarPara) {
         
-        let vc = AppManager.getViewController(name: para.vcName)
+        let vc = AppUtil.getViewController(name: para.vcName)
         guard let v = vc else { return }
         v.tabBarItem.image = UIImage(named: "")
         v.tabBarItem.selectedImage = UIImage(named: "")

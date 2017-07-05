@@ -28,7 +28,7 @@ struct UploadFile {
 class AppNet: NSObject {
     
     // MARK: == get请求
-    static func get(url: String!, paras:[String:String]? = nil, header:[String : String]? = nil, success: @escaping([String : Any]?, Any?) -> ()) {
+    static func get(url: String!, paras:[String:String]? = nil, header:[String : String]? = nil, success: @escaping([String : Any]?, Any?) -> Swift.Void) {
         
         Alamofire.request(url, method: .get, parameters: paras, encoding: URLEncoding.default, headers: header).responseJSON { response in
             parseData(result: response, success: success)
@@ -37,7 +37,7 @@ class AppNet: NSObject {
     }
     
     // MARK: == get请求加Author验证
-    static func getAuthorization(url: String!, paras:[String:String]? = nil, header:[String : String]? = nil, userName: String? = "", passWord: String? = "",success: @escaping ([String : Any]?, Any?) -> ()) {
+    static func getAuthorization(url: String!, paras:[String:String]? = nil, header:[String : String]? = nil, userName: String? = "", passWord: String? = "",success: @escaping ([String : Any]?, Any?) -> Swift.Void) {
         
         Alamofire.request(url, method: .get, parameters: paras, encoding: URLEncoding.default, headers: header).authenticate(user: userName!, password: passWord!).responseJSON { response in
             parseData(result: response, success: success)
@@ -53,7 +53,7 @@ class AppNet: NSObject {
     }
     
     // MARK: == post请求加Author验证
-    static func postAuthorization(url: String!, paras:[String:String]? = nil, header:[String : String]? = nil, userName: String? = "", passWord: String? = "",success: @escaping([String : Any]?, Any?) -> ()) {
+    static func postAuthorization(url: String!, paras:[String:String]? = nil, header:[String : String]? = nil, userName: String? = "", passWord: String? = "",success: @escaping([String : Any]?, Any?) -> Swift.Void) {
         
         Alamofire.request(url, method: .post, parameters: paras, encoding: URLEncoding.default, headers:  header)
             .authenticate(user: userName!, password: passWord!)
@@ -89,7 +89,7 @@ class AppNet: NSObject {
         })
     }
     // MARK: == 解析数据
-    private static func parseData(result: DataResponse<Any>, success: ([String : Any]?, Any?) -> ()) {
+    private static func parseData(result: DataResponse<Any>, success: ([String : Any]?, Any?) -> Swift.Void) {
         
         guard let code = result.response?.statusCode else { return }
         guard let data = result.result.value else { return }

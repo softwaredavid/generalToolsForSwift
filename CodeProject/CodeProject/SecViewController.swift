@@ -16,14 +16,19 @@ class SecViewController: BaseViewController,TabDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        s = TabViewDataSource(cellArray: ["one","two"], sourceArray: [["hello"],["hello",""]])
+       /* s = TabViewDataSource(cellArray: ["one","two"], sourceArray: [["hello"],["hello",""]])
         tabView.dataSource = s
         
         d = TabViewDelegate(heightArray: [50,300])
         d.delegate = self
         tabView.delegate = d
+        tabView.refresh(header: { [weak self] in
+
+        }) {
+            
+        }
         
-        tabView.reloadData()
+        tabView.reloadData()*/
        
         // Do any additional setup after loading the view.
     }

@@ -36,7 +36,7 @@ class AlertView: NSObject {
     // MARK ---- 显示网络请求菊花
     @discardableResult
     static func showProgressView(text: String) -> MBProgressHUD? {
-        guard let window = AppManager.getKeyWindow() else { return nil }
+        guard let window = AppUtil.getKeyWindow() else { return nil }
         let hud = MBProgressHUD.showAdded(to: window, animated: true)
         hud.backgroundView.style = .solidColor;
         hud.backgroundView.color = UIColor.lightGray;
@@ -46,7 +46,7 @@ class AlertView: NSObject {
     }
     
     private static func getMB(text: String) -> MBProgressHUD? {
-        guard let window = AppManager.getKeyWindow() else { return nil }
+        guard let window = AppUtil.getKeyWindow() else { return nil }
         let hud = MBProgressHUD.showAdded(to: window, animated: true)
         hud.mode = .text
         hud.label.text = text

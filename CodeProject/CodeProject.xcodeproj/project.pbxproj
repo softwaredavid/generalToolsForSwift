@@ -10,12 +10,6 @@
 		182C2F1E1F09F0C300849C32 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 182C2F1D1F09F0C300849C32 /* libsqlite3.0.tbd */; };
 		187DC20A1F0B456800D8D4E3 /* LoginUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC2091F0B456800D8D4E3 /* LoginUtil.swift */; };
 		187DC2151F0B6E1B00D8D4E3 /* SecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC2131F0B6E1B00D8D4E3 /* SecViewController.swift */; };
-		187DC2F51F0B99EE00D8D4E3 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC27D1F0B99EE00D8D4E3 /* FMDatabase.m */; };
-		187DC2F61F0B99EE00D8D4E3 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC27F1F0B99EE00D8D4E3 /* FMDatabaseAdditions.m */; };
-		187DC2F71F0B99EE00D8D4E3 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC2811F0B99EE00D8D4E3 /* FMDatabasePool.m */; };
-		187DC2F81F0B99EE00D8D4E3 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC2831F0B99EE00D8D4E3 /* FMDatabaseQueue.m */; };
-		187DC2F91F0B99EE00D8D4E3 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC2861F0B99EE00D8D4E3 /* FMResultSet.m */; };
-		187DC2FA1F0B99EE00D8D4E3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 187DC2871F0B99EE00D8D4E3 /* Info.plist */; };
 		187DC2FB1F0B99EE00D8D4E3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC28A1F0B99EE00D8D4E3 /* MBProgressHUD.m */; };
 		187DC2FC1F0B99EE00D8D4E3 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC28E1F0B99EE00D8D4E3 /* MJRefreshAutoFooter.m */; };
 		187DC2FD1F0B99EE00D8D4E3 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC2901F0B99EE00D8D4E3 /* MJRefreshBackFooter.m */; };
@@ -76,7 +70,6 @@
 		187DC35E1F0B9A9600D8D4E3 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC3571F0B9A9600D8D4E3 /* GuideViewController.swift */; };
 		187DC35F1F0B9A9600D8D4E3 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC3581F0B9A9600D8D4E3 /* PickerView.swift */; };
 		187DC3601F0B9A9600D8D4E3 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC3591F0B9A9600D8D4E3 /* ProgressView.swift */; };
-		187DC3611F0B9A9600D8D4E3 /* QRQCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC35A1F0B9A9600D8D4E3 /* QRQCode.swift */; };
 		187DC3621F0B9A9600D8D4E3 /* SelectPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC35B1F0B9A9600D8D4E3 /* SelectPhoto.swift */; };
 		187DC3631F0B9A9600D8D4E3 /* SudokuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC35C1F0B9A9600D8D4E3 /* SudokuView.swift */; };
 		187DC3691F0B9ABB00D8D4E3 /* ConfigApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC3661F0B9ABB00D8D4E3 /* ConfigApp.swift */; };
@@ -87,13 +80,22 @@
 		187DC3771F0B9AE900D8D4E3 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC36F1F0B9AE900D8D4E3 /* BaseTableViewCell.swift */; };
 		187DC3781F0B9AE900D8D4E3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC3701F0B9AE900D8D4E3 /* BaseViewController.swift */; };
 		187DC3791F0B9AE900D8D4E3 /* TabbReuseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC3711F0B9AE900D8D4E3 /* TabbReuseHeaderView.swift */; };
-		187DC37A1F0B9AE900D8D4E3 /* TabRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC3721F0B9AE900D8D4E3 /* TabRefresh.swift */; };
 		187DC37B1F0B9AE900D8D4E3 /* TabViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC3731F0B9AE900D8D4E3 /* TabViewDataSource.swift */; };
 		187DC37C1F0B9AE900D8D4E3 /* TabViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC3741F0B9AE900D8D4E3 /* TabViewDelegate.swift */; };
 		187DC37F1F0B9B3500D8D4E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC37E1F0B9B3500D8D4E3 /* AppDelegate.swift */; };
-		187DC3831F0B9B6900D8D4E3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 187DC3811F0B9B6900D8D4E3 /* Info.plist */; };
 		187DC3841F0B9B6900D8D4E3 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187DC3821F0B9B6900D8D4E3 /* Storyboard.storyboard */; };
 		187DC3861F0B9B9100D8D4E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187DC3851F0B9B9100D8D4E3 /* Assets.xcassets */; };
+		188359741F0C6ED40023ECEF /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883596A1F0C6ED40023ECEF /* FMDatabase.m */; };
+		188359751F0C6ED40023ECEF /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883596C1F0C6ED40023ECEF /* FMDatabaseAdditions.m */; };
+		188359761F0C6ED40023ECEF /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883596E1F0C6ED40023ECEF /* FMDatabasePool.m */; };
+		188359771F0C6ED40023ECEF /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 188359701F0C6ED40023ECEF /* FMDatabaseQueue.m */; };
+		188359781F0C6ED40023ECEF /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 188359731F0C6ED40023ECEF /* FMResultSet.m */; };
+		1883597B1F0C75200023ECEF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883597A1F0C75200023ECEF /* UIView+Extension.swift */; };
+		1883597D1F0CB6B90023ECEF /* SystemAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883597C1F0CB6B90023ECEF /* SystemAlertView.swift */; };
+		188359881F0CCADB0023ECEF /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188359871F0CCADB0023ECEF /* UITableView+Extension.swift */; };
+		1883598A1F0CD0A10023ECEF /* ScrollerView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188359891F0CD0A10023ECEF /* ScrollerView+extension.swift */; };
+		1883598D1F0CDC0E0023ECEF /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883598C1F0CDC0E0023ECEF /* QRCodeViewController.swift */; };
+		1883598F1F0CE65A0023ECEF /* CreateQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883598E1F0CE65A0023ECEF /* CreateQRCodeViewController.swift */; };
 		1888D10B1F00AA4D00789723 /* CodeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888D10A1F00AA4D00789723 /* CodeProjectTests.swift */; };
 		1888D1161F00AA4E00789723 /* CodeProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888D1151F00AA4E00789723 /* CodeProjectUITests.swift */; };
 		1888D13C1F00AD0700789723 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888D13B1F00AD0700789723 /* HomeViewController.swift */; };
@@ -185,18 +187,6 @@
 		182C2F1D1F09F0C300849C32 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		187DC2091F0B456800D8D4E3 /* LoginUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUtil.swift; sourceTree = "<group>"; };
 		187DC2131F0B6E1B00D8D4E3 /* SecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecViewController.swift; sourceTree = "<group>"; };
-		187DC27C1F0B99EE00D8D4E3 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		187DC27D1F0B99EE00D8D4E3 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		187DC27E1F0B99EE00D8D4E3 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		187DC27F1F0B99EE00D8D4E3 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		187DC2801F0B99EE00D8D4E3 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		187DC2811F0B99EE00D8D4E3 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		187DC2821F0B99EE00D8D4E3 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		187DC2831F0B99EE00D8D4E3 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		187DC2841F0B99EE00D8D4E3 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
-		187DC2851F0B99EE00D8D4E3 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		187DC2861F0B99EE00D8D4E3 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		187DC2871F0B99EE00D8D4E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187DC2891F0B99EE00D8D4E3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		187DC28A1F0B99EE00D8D4E3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		187DC28D1F0B99EE00D8D4E3 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
@@ -307,7 +297,6 @@
 		187DC3571F0B9A9600D8D4E3 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		187DC3581F0B9A9600D8D4E3 /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		187DC3591F0B9A9600D8D4E3 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
-		187DC35A1F0B9A9600D8D4E3 /* QRQCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRQCode.swift; sourceTree = "<group>"; };
 		187DC35B1F0B9A9600D8D4E3 /* SelectPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPhoto.swift; sourceTree = "<group>"; };
 		187DC35C1F0B9A9600D8D4E3 /* SudokuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudokuView.swift; sourceTree = "<group>"; };
 		187DC3661F0B9ABB00D8D4E3 /* ConfigApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigApp.swift; sourceTree = "<group>"; };
@@ -318,7 +307,6 @@
 		187DC36F1F0B9AE900D8D4E3 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		187DC3701F0B9AE900D8D4E3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		187DC3711F0B9AE900D8D4E3 /* TabbReuseHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbReuseHeaderView.swift; sourceTree = "<group>"; };
-		187DC3721F0B9AE900D8D4E3 /* TabRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabRefresh.swift; sourceTree = "<group>"; };
 		187DC3731F0B9AE900D8D4E3 /* TabViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewDataSource.swift; sourceTree = "<group>"; };
 		187DC3741F0B9AE900D8D4E3 /* TabViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewDelegate.swift; sourceTree = "<group>"; };
 		187DC37E1F0B9B3500D8D4E3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -326,10 +314,26 @@
 		187DC3821F0B9B6900D8D4E3 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = Main/Storyboard.storyboard; sourceTree = "<group>"; };
 		187DC3851F0B9B9100D8D4E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		188359661F0C6CF60023ECEF /* CodeProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CodeProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		188359691F0C6ED40023ECEF /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		1883596A1F0C6ED40023ECEF /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		1883596B1F0C6ED40023ECEF /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		1883596C1F0C6ED40023ECEF /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		1883596D1F0C6ED40023ECEF /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		1883596E1F0C6ED40023ECEF /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		1883596F1F0C6ED40023ECEF /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		188359701F0C6ED40023ECEF /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		188359711F0C6ED40023ECEF /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		188359721F0C6ED40023ECEF /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		188359731F0C6ED40023ECEF /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		1883597A1F0C75200023ECEF /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1883597C1F0CB6B90023ECEF /* SystemAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemAlertView.swift; sourceTree = "<group>"; };
+		188359871F0CCADB0023ECEF /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		188359891F0CD0A10023ECEF /* ScrollerView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScrollerView+extension.swift"; sourceTree = "<group>"; };
+		1883598C1F0CDC0E0023ECEF /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		1883598E1F0CE65A0023ECEF /* CreateQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQRCodeViewController.swift; sourceTree = "<group>"; };
 		1888D0F21F00AA4D00789723 /* CodeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1888D1061F00AA4D00789723 /* CodeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1888D10A1F00AA4D00789723 /* CodeProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeProjectTests.swift; sourceTree = "<group>"; };
-		1888D10C1F00AA4E00789723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1888D1111F00AA4E00789723 /* CodeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1888D1151F00AA4E00789723 /* CodeProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeProjectUITests.swift; sourceTree = "<group>"; };
 		1888D1171F00AA4E00789723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -384,8 +388,8 @@
 		187DC27A1F0B99EE00D8D4E3 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				188359681F0C6ED40023ECEF /* fmdb */,
 				187DC32B1F0B9A3700D8D4E3 /* Alamofire.xcodeproj */,
-				187DC27B1F0B99EE00D8D4E3 /* fmdb */,
 				187DC2881F0B99EE00D8D4E3 /* MBProgressHUD */,
 				187DC28B1F0B99EE00D8D4E3 /* MJRefresh */,
 				187DC2BA1F0B99EE00D8D4E3 /* SDCycleScrollView */,
@@ -393,25 +397,6 @@
 				187DC2F21F0B99EE00D8D4E3 /* SwiftJSON */,
 			);
 			path = Lib;
-			sourceTree = "<group>";
-		};
-		187DC27B1F0B99EE00D8D4E3 /* fmdb */ = {
-			isa = PBXGroup;
-			children = (
-				187DC27C1F0B99EE00D8D4E3 /* FMDatabase.h */,
-				187DC27D1F0B99EE00D8D4E3 /* FMDatabase.m */,
-				187DC27E1F0B99EE00D8D4E3 /* FMDatabaseAdditions.h */,
-				187DC27F1F0B99EE00D8D4E3 /* FMDatabaseAdditions.m */,
-				187DC2801F0B99EE00D8D4E3 /* FMDatabasePool.h */,
-				187DC2811F0B99EE00D8D4E3 /* FMDatabasePool.m */,
-				187DC2821F0B99EE00D8D4E3 /* FMDatabaseQueue.h */,
-				187DC2831F0B99EE00D8D4E3 /* FMDatabaseQueue.m */,
-				187DC2841F0B99EE00D8D4E3 /* FMDB.h */,
-				187DC2851F0B99EE00D8D4E3 /* FMResultSet.h */,
-				187DC2861F0B99EE00D8D4E3 /* FMResultSet.m */,
-				187DC2871F0B99EE00D8D4E3 /* Info.plist */,
-			);
-			path = fmdb;
 			sourceTree = "<group>";
 		};
 		187DC2881F0B99EE00D8D4E3 /* MBProgressHUD */ = {
@@ -638,9 +623,9 @@
 				187DC3571F0B9A9600D8D4E3 /* GuideViewController.swift */,
 				187DC3581F0B9A9600D8D4E3 /* PickerView.swift */,
 				187DC3591F0B9A9600D8D4E3 /* ProgressView.swift */,
-				187DC35A1F0B9A9600D8D4E3 /* QRQCode.swift */,
 				187DC35B1F0B9A9600D8D4E3 /* SelectPhoto.swift */,
 				187DC35C1F0B9A9600D8D4E3 /* SudokuView.swift */,
+				1883597C1F0CB6B90023ECEF /* SystemAlertView.swift */,
 			);
 			path = CommonViews;
 			sourceTree = "<group>";
@@ -663,7 +648,6 @@
 				187DC36F1F0B9AE900D8D4E3 /* BaseTableViewCell.swift */,
 				187DC3701F0B9AE900D8D4E3 /* BaseViewController.swift */,
 				187DC3711F0B9AE900D8D4E3 /* TabbReuseHeaderView.swift */,
-				187DC3721F0B9AE900D8D4E3 /* TabRefresh.swift */,
 				187DC3731F0B9AE900D8D4E3 /* TabViewDataSource.swift */,
 				187DC3741F0B9AE900D8D4E3 /* TabViewDelegate.swift */,
 			);
@@ -686,6 +670,43 @@
 				187DC3851F0B9B9100D8D4E3 /* Assets.xcassets */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		188359681F0C6ED40023ECEF /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				188359691F0C6ED40023ECEF /* FMDatabase.h */,
+				1883596A1F0C6ED40023ECEF /* FMDatabase.m */,
+				1883596B1F0C6ED40023ECEF /* FMDatabaseAdditions.h */,
+				1883596C1F0C6ED40023ECEF /* FMDatabaseAdditions.m */,
+				1883596D1F0C6ED40023ECEF /* FMDatabasePool.h */,
+				1883596E1F0C6ED40023ECEF /* FMDatabasePool.m */,
+				1883596F1F0C6ED40023ECEF /* FMDatabaseQueue.h */,
+				188359701F0C6ED40023ECEF /* FMDatabaseQueue.m */,
+				188359711F0C6ED40023ECEF /* FMDB.h */,
+				188359721F0C6ED40023ECEF /* FMResultSet.h */,
+				188359731F0C6ED40023ECEF /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		188359791F0C74EC0023ECEF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1883597A1F0C75200023ECEF /* UIView+Extension.swift */,
+				188359871F0CCADB0023ECEF /* UITableView+Extension.swift */,
+				188359891F0CD0A10023ECEF /* ScrollerView+extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		1883598B1F0CDBEE0023ECEF /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				1883598C1F0CDC0E0023ECEF /* QRCodeViewController.swift */,
+				1883598E1F0CE65A0023ECEF /* CreateQRCodeViewController.swift */,
+			);
+			name = QRCode;
 			sourceTree = "<group>";
 		};
 		1888D0E91F00AA4D00789723 = {
@@ -712,6 +733,8 @@
 		1888D0F41F00AA4D00789723 /* CodeProject */ = {
 			isa = PBXGroup;
 			children = (
+				1883598B1F0CDBEE0023ECEF /* QRCode */,
+				188359791F0C74EC0023ECEF /* Extension */,
 				187DC3801F0B9B6900D8D4E3 /* Main */,
 				187DC37D1F0B9B3500D8D4E3 /* AppDelegate */,
 				187DC36C1F0B9AE900D8D4E3 /* Base */,
@@ -728,7 +751,6 @@
 			isa = PBXGroup;
 			children = (
 				1888D10A1F00AA4D00789723 /* CodeProjectTests.swift */,
-				1888D10C1F00AA4E00789723 /* Info.plist */,
 			);
 			path = CodeProjectTests;
 			sourceTree = "<group>";
@@ -958,9 +980,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187DC2FA1F0B99EE00D8D4E3 /* Info.plist in Resources */,
 				187DC30A1F0B99EE00D8D4E3 /* MJRefresh.bundle in Resources */,
-				187DC3831F0B9B6900D8D4E3 /* Info.plist in Resources */,
 				187DC3861F0B9B9100D8D4E3 /* Assets.xcassets in Resources */,
 				187DC3841F0B9B6900D8D4E3 /* Storyboard.storyboard in Resources */,
 			);
@@ -989,13 +1009,14 @@
 			files = (
 				187DC3691F0B9ABB00D8D4E3 /* ConfigApp.swift in Sources */,
 				187DC3231F0B99EE00D8D4E3 /* UIImage+GIF.m in Sources */,
+				1883598D1F0CDC0E0023ECEF /* QRCodeViewController.swift in Sources */,
 				187DC3071F0B99EE00D8D4E3 /* MJRefreshGifHeader.m in Sources */,
-				187DC37A1F0B9AE900D8D4E3 /* TabRefresh.swift in Sources */,
 				187DC35D1F0B9A9600D8D4E3 /* AlertView.swift in Sources */,
 				1888D1421F00AD3100789723 /* DiscouverViewController.swift in Sources */,
 				187DC3781F0B9AE900D8D4E3 /* BaseViewController.swift in Sources */,
 				187DC31F1F0B99EE00D8D4E3 /* SDWebImageDownloaderOperation.m in Sources */,
 				187DC3791F0B9AE900D8D4E3 /* TabbReuseHeaderView.swift in Sources */,
+				188359751F0C6ED40023ECEF /* FMDatabaseAdditions.m in Sources */,
 				187DC36B1F0B9ABB00D8D4E3 /* RequestPort.swift in Sources */,
 				187DC3101F0B99EE00D8D4E3 /* TAAbstractDotView.m in Sources */,
 				187DC34E1F0B9A7400D8D4E3 /* AppNet.swift in Sources */,
@@ -1003,11 +1024,10 @@
 				1888D13E1F00AD1300789723 /* ShopViewController.swift in Sources */,
 				187DC3051F0B99EE00D8D4E3 /* MJRefreshBackNormalFooter.m in Sources */,
 				187DC3221F0B99EE00D8D4E3 /* UIButton+WebCache.m in Sources */,
+				188359771F0C6ED40023ECEF /* FMDatabaseQueue.m in Sources */,
 				187DC3601F0B9A9600D8D4E3 /* ProgressView.swift in Sources */,
-				187DC2F81F0B99EE00D8D4E3 /* FMDatabaseQueue.m in Sources */,
 				187DC30F1F0B99EE00D8D4E3 /* UIView+MJExtension.m in Sources */,
 				187DC3021F0B99EE00D8D4E3 /* MJRefreshAutoNormalFooter.m in Sources */,
-				187DC2F71F0B99EE00D8D4E3 /* FMDatabasePool.m in Sources */,
 				187DC3631F0B9A9600D8D4E3 /* SudokuView.swift in Sources */,
 				187DC37C1F0B9AE900D8D4E3 /* TabViewDelegate.swift in Sources */,
 				187DC34F1F0B9A7400D8D4E3 /* AppUtil.swift in Sources */,
@@ -1016,21 +1036,20 @@
 				187DC2151F0B6E1B00D8D4E3 /* SecViewController.swift in Sources */,
 				187DC31A1F0B99EE00D8D4E3 /* SDImageCache.m in Sources */,
 				1888D1401F00AD2200789723 /* MeViewController.swift in Sources */,
-				187DC2F61F0B99EE00D8D4E3 /* FMDatabaseAdditions.m in Sources */,
 				187DC3241F0B99EE00D8D4E3 /* UIImage+MultiFormat.m in Sources */,
 				187DC2FB1F0B99EE00D8D4E3 /* MBProgressHUD.m in Sources */,
-				187DC2F91F0B99EE00D8D4E3 /* FMResultSet.m in Sources */,
 				187DC30E1F0B99EE00D8D4E3 /* UIScrollView+MJRefresh.m in Sources */,
 				187DC35E1F0B9A9600D8D4E3 /* GuideViewController.swift in Sources */,
 				187DC3161F0B99EE00D8D4E3 /* UIView+SDExtension.m in Sources */,
-				187DC2F51F0B99EE00D8D4E3 /* FMDatabase.m in Sources */,
 				187DC20A1F0B456800D8D4E3 /* LoginUtil.swift in Sources */,
 				187DC31C1F0B99EE00D8D4E3 /* SDWebImageCompat.m in Sources */,
 				1888D13C1F00AD0700789723 /* HomeViewController.swift in Sources */,
 				187DC3211F0B99EE00D8D4E3 /* SDWebImagePrefetcher.m in Sources */,
 				187DC3281F0B99EE00D8D4E3 /* UIView+WebCache.m in Sources */,
 				187DC30B1F0B99EE00D8D4E3 /* MJRefreshConst.m in Sources */,
+				1883597D1F0CB6B90023ECEF /* SystemAlertView.swift in Sources */,
 				187DC3751F0B9AE900D8D4E3 /* BaseNavigationViewController.swift in Sources */,
+				188359761F0C6ED40023ECEF /* FMDatabasePool.m in Sources */,
 				187DC3201F0B99EE00D8D4E3 /* SDWebImageManager.m in Sources */,
 				187DC32A1F0B99EE00D8D4E3 /* SwiftyJSON.swift in Sources */,
 				187DC3041F0B99EE00D8D4E3 /* MJRefreshBackGifFooter.m in Sources */,
@@ -1042,6 +1061,7 @@
 				187DC3771F0B9AE900D8D4E3 /* BaseTableViewCell.swift in Sources */,
 				187DC3531F0B9A7400D8D4E3 /* PayManager.swift in Sources */,
 				187DC3541F0B9A7400D8D4E3 /* TimeUtil.swift in Sources */,
+				1883598F1F0CE65A0023ECEF /* CreateQRCodeViewController.swift in Sources */,
 				187DC3191F0B99EE00D8D4E3 /* NSImage+WebCache.m in Sources */,
 				187DC3291F0B99EE00D8D4E3 /* UIView+WebCacheOperation.m in Sources */,
 				187DC31B1F0B99EE00D8D4E3 /* SDImageCacheConfig.m in Sources */,
@@ -1052,17 +1072,21 @@
 				187DC3141F0B99EE00D8D4E3 /* SDCollectionViewCell.m in Sources */,
 				187DC3181F0B99EE00D8D4E3 /* NSData+ImageContentType.m in Sources */,
 				187DC31D1F0B99EE00D8D4E3 /* SDWebImageDecoder.m in Sources */,
-				187DC3611F0B9A9600D8D4E3 /* QRQCode.swift in Sources */,
+				1883598A1F0CD0A10023ECEF /* ScrollerView+extension.swift in Sources */,
+				188359781F0C6ED40023ECEF /* FMResultSet.m in Sources */,
 				187DC3131F0B99EE00D8D4E3 /* TAPageControl.m in Sources */,
 				187DC3121F0B99EE00D8D4E3 /* TADotView.m in Sources */,
 				187DC36A1F0B9ABB00D8D4E3 /* OtherData.swift in Sources */,
 				187DC3081F0B99EE00D8D4E3 /* MJRefreshNormalHeader.m in Sources */,
 				187DC30D1F0B99EE00D8D4E3 /* UIScrollView+MJExtension.m in Sources */,
+				1883597B1F0C75200023ECEF /* UIView+Extension.swift in Sources */,
+				188359741F0C6ED40023ECEF /* FMDatabase.m in Sources */,
 				187DC3251F0B99EE00D8D4E3 /* UIImage+WebP.m in Sources */,
 				187DC37B1F0B9AE900D8D4E3 /* TabViewDataSource.swift in Sources */,
 				187DC3031F0B99EE00D8D4E3 /* MJRefreshAutoStateFooter.m in Sources */,
 				187DC3011F0B99EE00D8D4E3 /* MJRefreshAutoGifFooter.m in Sources */,
 				187DC3271F0B99EE00D8D4E3 /* UIImageView+WebCache.m in Sources */,
+				188359881F0CCADB0023ECEF /* UITableView+Extension.swift in Sources */,
 				187DC2FD1F0B99EE00D8D4E3 /* MJRefreshBackFooter.m in Sources */,
 				187DC35F1F0B9A9600D8D4E3 /* PickerView.swift in Sources */,
 				187DC3261F0B99EE00D8D4E3 /* UIImageView+HighlightedWebCache.m in Sources */,

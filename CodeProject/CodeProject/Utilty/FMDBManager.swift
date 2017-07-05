@@ -24,7 +24,7 @@ class FMDBManager: NSObject {
         if dbQueue != nil {
             close()
         }
-        let path = AppManager.getSandboxPath(path: name)
+        let path = AppUtil.getSandboxPath(path: name)
         dbQueue = FMDatabaseQueue(url: path)
     }
     

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+fileprivate let versionApp = "SnadbosVersion"
 
 class CheckAppVersion: NSObject {
     
@@ -15,7 +16,20 @@ class CheckAppVersion: NSObject {
         return "\(Bundle.main.infoDictionary!["CFBundleShortVersionString"]!)"
     }
     
-    // MARk: ==  版本升级
+   /* 不够精确 // MARK: == 本地版本
+    static func isNeewVersion() -> Bool {
+        let currentVersion = getCurentAppVersion()
+        let userDefault = UserDefaults.standard
+        let sanboxVersion = userDefault.string(forKey: versionApp) ?? "0.0"
+        if currentVersion > sanboxVersion {
+            
+            userDefault.set(currentVersion, forKey: versionApp)
+            return true
+        }
+        return false
+    }*/
+    
+    // MARk: ==  版本升级 appStore版本
     static func upgradeApp(complete: @escaping ((String?, Bool)->Void)) {
         AppNet.post(url: appStoreUrl,header: ["Content-Type":"application/json"]) { (dic, any) in
             guard let result = dic?["results"] as? [[String:Any]] else { return }
@@ -34,5 +48,13 @@ class CheckAppVersion: NSObject {
                 }
             }
         }
+    }
+    static func gotoAppstore() {
+        if #available(iOS 10, *) {
+            UIApplication.shared.open(URL(string: appStoreUrl)!, options: [UIApplicationOpenURLOptionUniversalLinksOnly:true], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(URL(string: appStoreUrl)!)
+        }
+        
     }
 }

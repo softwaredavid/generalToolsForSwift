@@ -111,10 +111,25 @@ class HomeViewController: BaseViewController {
         btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
         view.addSubview(btn)
         
+       
+        
     }
+    //var select: SelectPhoto = SelectPhoto()
     func btnClick() {
-        let s = AppManager.getViewController(storyBoard: "Storyboard", identify: "store") as! SecViewController
+        let s = CreateQRCodeViewController()
         navigationController?.pushViewController(s, animated: true)
+//        let p = PickerView(array: ["hello","hello","hello","hello"]) { item in
+//        
+//        }
+//        p.show()
+//        let s = AppUtil.getViewController(storyBoard: "Storyboard", identify: "store") as! SecViewController
+//        navigationController?.pushViewController(s, animated: true)
+//        SystemAlertView.showActionSheet(controller: self, btns: ["测试","测试","测试","测试"]) { name in
+//            self.select.show(controller: self, type: .photoLibrary) { image in
+//                
+//            }
+//        }
+        
     }
-
 }
+
