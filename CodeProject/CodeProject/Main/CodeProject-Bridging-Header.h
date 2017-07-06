@@ -6,3 +6,5 @@
 #import "SDCycleScrollView.h"
 #import "FMDB.h"
 #import "MJRefresh.h"
+#import "WXApi.h"
+#import <AlipaySDK/AlipaySDK.h>

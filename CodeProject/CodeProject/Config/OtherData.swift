@@ -7,6 +7,8 @@
 //
 
 import UIKit
+//MARK: =========常用的定义===========
+typealias void_func_void = () -> ()
 
 //MARK: ========各种正则=========
 let phone = "^[1][^129]{1}[0-9]{9}$"

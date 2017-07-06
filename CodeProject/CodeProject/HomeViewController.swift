@@ -110,13 +110,12 @@ class HomeViewController: BaseViewController {
         btn.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
         btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
         view.addSubview(btn)
-        
-       
-        
+
     }
+    
     //var select: SelectPhoto = SelectPhoto()
     func btnClick() {
-        let s = CreateQRCodeViewController()
+        let s = QRCodeViewController()
         navigationController?.pushViewController(s, animated: true)
 //        let p = PickerView(array: ["hello","hello","hello","hello"]) { item in
 //        

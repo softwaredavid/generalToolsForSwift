@@ -16,18 +16,16 @@ class CheckAppVersion: NSObject {
         return "\(Bundle.main.infoDictionary!["CFBundleShortVersionString"]!)"
     }
     
-   /* 不够精确 // MARK: == 本地版本
-    static func isNeewVersion() -> Bool {
+   // MARK: == 本地版本 处理引导图用
+    static func isNewVersion() -> Bool {
         let currentVersion = getCurentAppVersion()
-        let userDefault = UserDefaults.standard
         let sanboxVersion = userDefault.string(forKey: versionApp) ?? "0.0"
         if currentVersion > sanboxVersion {
-            
             userDefault.set(currentVersion, forKey: versionApp)
             return true
         }
         return false
-    }*/
+    }
     
     // MARk: ==  版本升级 appStore版本
     static func upgradeApp(complete: @escaping ((String?, Bool)->Void)) {

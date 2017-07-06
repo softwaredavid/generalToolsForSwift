@@ -24,6 +24,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    // ios 9.0
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        if url.host == "safepay" {
+            AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (dic) in
+                if (PayManager.transformOrderParamterFormAlipay(dic) != nil) {}
+            })
+        } else {
+            WXApi.handleOpen(url, delegate: PayManager.instance)
+        }
+        
+        return true
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        if url.host == "safepay" {
+            AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (dic) in
+                if (PayManager.transformOrderParamterFormAlipay(dic) != nil) {}
+            })
+        } else {
+            WXApi.handleOpen(url, delegate: PayManager.instance)
+        }
+        
+        return true
+    }
     
     func applicationWillResignActive(_ application: UIApplication) {
         
