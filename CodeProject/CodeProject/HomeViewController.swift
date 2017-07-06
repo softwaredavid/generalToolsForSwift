@@ -115,8 +115,14 @@ class HomeViewController: BaseViewController {
     
     //var select: SelectPhoto = SelectPhoto()
     func btnClick() {
-        let s = QRCodeViewController()
-        navigationController?.pushViewController(s, animated: true)
+        let s = SecViewController()
+        let tr = TransitionViewDelegate()
+        s.modalPresentationStyle = .custom
+        s.transitioningDelegate = tr
+        present(s, animated: true, completion: nil)
+        
+        
+        //navigationController?.pushViewController(s, animated: true)
 //        let p = PickerView(array: ["hello","hello","hello","hello"]) { item in
 //        
 //        }

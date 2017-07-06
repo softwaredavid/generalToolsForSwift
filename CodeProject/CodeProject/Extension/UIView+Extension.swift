@@ -47,13 +47,13 @@ extension UIView {
         self.layer.borderColor = color.cgColor
     }
     
-    func getViewController() -> UIViewController? {
-         let res = next
-        while res != nil {
-            if res is UIViewController {
-                return res as? UIViewController
-            }
-        }
-        return nil
-    }
+//    func getViewController() -> UIViewController? {
+//        let res = next
+//        while res != nil {
+//            if res is UIViewController {
+//                return res as? UIViewController
+//            }
+//        }
+//        return nil
+//    }
 }

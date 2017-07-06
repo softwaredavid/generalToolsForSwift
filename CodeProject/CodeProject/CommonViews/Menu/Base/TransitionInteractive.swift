@@ -13,6 +13,7 @@ class TransitionInteractive: UIPercentDrivenInteractiveTransition {
     var dismissController: UIViewController?
     var isGestureDis = false
     private var shouldCompolete: Bool = false
+    
     func addGesturePresent(viewController: UIViewController) {
         dismissController = viewController
         viewController.view.addGestureRecognizer(createSwipGesture())

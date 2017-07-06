@@ -10,6 +10,9 @@ import UIKit
 
 class TransitionPresent: NSObject,
 UIViewControllerAnimatedTransitioning {
+    
+    var viewAppearAnimate: viewAppearAnimate = .viewAppdarFromTop
+    
     //返回转场动画的时间
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.5
@@ -27,8 +30,19 @@ UIViewControllerAnimatedTransitioning {
         let toView = transitionContext.view(forKey: .to)
         continerView.addSubview(toView!)
         //在此可以执行动画
-        toView?.layer.anchorPoint = CGPoint(x: 0.5, y: 0.0)
-        toView?.transform = CGAffineTransform(scaleX: 1.0, y: 0.00001)
+        
+        switch viewAppearAnimate {
+        case .viewAppdarFromTop:
+            toView?.layer.anchorPoint = CGPoint(x: 0.5, y: 0.0)
+            toView?.transform = CGAffineTransform(scaleX: 1.0, y: 0.00001)
+        case .viewAppearFromLeft:
+            toView?.layer.anchorPoint = CGPoint(x: 0.0, y: 1)
+            toView?.transform = CGAffineTransform(scaleX: 0.00001, y: 1.0)
+        case .viewAppearFromRight:
+            toView?.layer.anchorPoint = CGPoint(x: 1, y: 0.0)
+            toView?.transform = CGAffineTransform(scaleX: 0.00001, y: 1.0)
+        }
+        
         UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
             toView?.transform = CGAffineTransform.identity
         }) { (_) in

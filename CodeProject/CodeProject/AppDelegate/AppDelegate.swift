@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.makeKeyAndVisible()
         configureAlamofireManager()//配置https无证书认证
         
+        AppManager.configNavBar()
+        
         return true
     }
     // ios 9.0
