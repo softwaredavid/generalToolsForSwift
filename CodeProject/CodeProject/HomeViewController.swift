@@ -110,29 +110,30 @@ class HomeViewController: BaseViewController {
         btn.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
         btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
         view.addSubview(btn)
+        view.backgroundColor = UIColor.brown
 
     }
     
     //var select: SelectPhoto = SelectPhoto()
     func btnClick() {
-        let s = SecViewController()
-        let tr = TransitionViewDelegate()
-        s.modalPresentationStyle = .custom
-        s.transitioningDelegate = tr
-        present(s, animated: true, completion: nil)
+        let s = PresentingViewController()
+//        let tr = TransitionViewDelegate()
+//        s.modalPresentationStyle = .custom
+//        s.transitioningDelegate = tr
+//        present(s, animated: true, completion: nil)
         
         
-        //navigationController?.pushViewController(s, animated: true)
+       navigationController?.pushViewController(s, animated: true)
 //        let p = PickerView(array: ["hello","hello","hello","hello"]) { item in
 //        
 //        }
 //        p.show()
-//        let s = AppUtil.getViewController(storyBoard: "Storyboard", identify: "store") as! SecViewController
+//        let s = AppUtil.getViewController(storyBoard: "Third", identify: "third") as! ThirdViewController
 //        navigationController?.pushViewController(s, animated: true)
 //        SystemAlertView.showActionSheet(controller: self, btns: ["测试","测试","测试","测试"]) { name in
-//            self.select.show(controller: self, type: .photoLibrary) { image in
+//            //self.select.show(controller: self, type: .photoLibrary) { image in
 //                
-//            }
+//            //}
 //        }
         
     }

@@ -10,6 +10,10 @@
  */
 import UIKit
 
+extension Notification.Name {
+
+}
+
 class AppManager: NSObject {
     
     static func configNavBar() {

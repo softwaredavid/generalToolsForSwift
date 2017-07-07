@@ -26,7 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
     // ios 9.0
+    @available(iOS 9.0, *)
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         if url.host == "safepay" {
             AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (dic) in

@@ -12,17 +12,12 @@
 		186772171F0DBED1006C59E3 /* icon_zuche_zhifu_dingjin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186772161F0DBED1006C59E3 /* icon_zuche_zhifu_dingjin@2x.png */; };
 		1867721A1F0DC21A006C59E3 /* qrcode_scanline_qrcode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186772181F0DC21A006C59E3 /* qrcode_scanline_qrcode@2x.png */; };
 		1867721B1F0DC21A006C59E3 /* qrcode_scanline_qrcode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186772191F0DC21A006C59E3 /* qrcode_scanline_qrcode@3x.png */; };
-		186772261F0DCE6C006C59E3 /* TransitionDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186772221F0DCE6C006C59E3 /* TransitionDismiss.swift */; };
-		186772271F0DCE6C006C59E3 /* TransitionInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186772231F0DCE6C006C59E3 /* TransitionInteractive.swift */; };
-		186772281F0DCE6C006C59E3 /* TransitionPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186772241F0DCE6C006C59E3 /* TransitionPresent.swift */; };
-		186772291F0DCE6C006C59E3 /* TransitionPresentedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186772251F0DCE6C006C59E3 /* TransitionPresentedManager.swift */; };
 		1867722F1F0DCEB7006C59E3 /* ScrollerView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867722B1F0DCEB7006C59E3 /* ScrollerView+extension.swift */; };
 		186772301F0DCEB7006C59E3 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867722C1F0DCEB7006C59E3 /* UIImage+Extension.swift */; };
 		186772311F0DCEB7006C59E3 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867722D1F0DCEB7006C59E3 /* UITableView+Extension.swift */; };
 		186772321F0DCEB7006C59E3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867722E1F0DCEB7006C59E3 /* UIView+Extension.swift */; };
 		1867723B1F0DCEEB006C59E3 /* CreateQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186772391F0DCEEB006C59E3 /* CreateQRCodeViewController.swift */; };
 		1867723C1F0DCEEB006C59E3 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867723A1F0DCEEB006C59E3 /* QRCodeViewController.swift */; };
-		1867723E1F0DD065006C59E3 /* TransitionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867723D1F0DD065006C59E3 /* TransitionViewDelegate.swift */; };
 		186772BB1F0DD373006C59E3 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 186772B61F0DD373006C59E3 /* libWeChatSDK.a */; };
 		186772BC1F0DD373006C59E3 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 186772B71F0DD373006C59E3 /* README.txt */; };
 		186773361F0DD759006C59E3 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 186773341F0DD759006C59E3 /* libcrypto.a */; };
@@ -39,6 +34,16 @@
 		1867734B1F0DD842006C59E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1867734A1F0DD842006C59E3 /* CoreGraphics.framework */; };
 		1867734E1F0DD88F006C59E3 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1867734C1F0DD88F006C59E3 /* AlipaySDK.bundle */; };
 		1867734F1F0DD88F006C59E3 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1867734D1F0DD88F006C59E3 /* AlipaySDK.framework */; };
+		1876E3411F0F21B10026409E /* TransitonAnimatonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E3401F0F21B10026409E /* TransitonAnimatonManager.swift */; };
+		1876E3431F0F23FB0026409E /* TabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E3421F0F23FB0026409E /* TabBarControllerDelegate.swift */; };
+		1876E3461F0F32250026409E /* TViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E3451F0F32250026409E /* TViewController.swift */; };
+		1876E3481F0F339A0026409E /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1876E3471F0F339A0026409E /* Third.storyboard */; };
+		1876E34A1F0F33B50026409E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E3491F0F33B50026409E /* ThirdViewController.swift */; };
+		1876E34C1F0F3A220026409E /* ModalTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E34B1F0F3A220026409E /* ModalTransitionDelegate.swift */; };
+		1876E34E1F0F3A650026409E /* ModalAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E34D1F0F3A650026409E /* ModalAnimationController.swift */; };
+		1876E3501F0F3B5E0026409E /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E34F1F0F3B5E0026409E /* ModalPresentationController.swift */; };
+		1876E3521F0F49430026409E /* PresentingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E3511F0F49430026409E /* PresentingViewController.swift */; };
+		1876E3541F0F49530026409E /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E3531F0F49530026409E /* PresentedViewController.swift */; };
 		187DC20A1F0B456800D8D4E3 /* LoginUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC2091F0B456800D8D4E3 /* LoginUtil.swift */; };
 		187DC2151F0B6E1B00D8D4E3 /* SecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DC2131F0B6E1B00D8D4E3 /* SecViewController.swift */; };
 		187DC2FB1F0B99EE00D8D4E3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC28A1F0B99EE00D8D4E3 /* MBProgressHUD.m */; };
@@ -215,17 +220,12 @@
 		186772161F0DBED1006C59E3 /* icon_zuche_zhifu_dingjin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_zuche_zhifu_dingjin@2x.png"; sourceTree = "<group>"; };
 		186772181F0DC21A006C59E3 /* qrcode_scanline_qrcode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scanline_qrcode@2x.png"; sourceTree = "<group>"; };
 		186772191F0DC21A006C59E3 /* qrcode_scanline_qrcode@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scanline_qrcode@3x.png"; sourceTree = "<group>"; };
-		186772221F0DCE6C006C59E3 /* TransitionDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDismiss.swift; sourceTree = "<group>"; };
-		186772231F0DCE6C006C59E3 /* TransitionInteractive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionInteractive.swift; sourceTree = "<group>"; };
-		186772241F0DCE6C006C59E3 /* TransitionPresent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPresent.swift; sourceTree = "<group>"; };
-		186772251F0DCE6C006C59E3 /* TransitionPresentedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPresentedManager.swift; sourceTree = "<group>"; };
 		1867722B1F0DCEB7006C59E3 /* ScrollerView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScrollerView+extension.swift"; sourceTree = "<group>"; };
 		1867722C1F0DCEB7006C59E3 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		1867722D1F0DCEB7006C59E3 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		1867722E1F0DCEB7006C59E3 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		186772391F0DCEEB006C59E3 /* CreateQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQRCodeViewController.swift; sourceTree = "<group>"; };
 		1867723A1F0DCEEB006C59E3 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
-		1867723D1F0DD065006C59E3 /* TransitionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewDelegate.swift; sourceTree = "<group>"; };
 		186772B61F0DD373006C59E3 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		186772B71F0DD373006C59E3 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		186772B81F0DD373006C59E3 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
@@ -245,6 +245,16 @@
 		1867734A1F0DD842006C59E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1867734C1F0DD88F006C59E3 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		1867734D1F0DD88F006C59E3 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		1876E3401F0F21B10026409E /* TransitonAnimatonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitonAnimatonManager.swift; sourceTree = "<group>"; };
+		1876E3421F0F23FB0026409E /* TabBarControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarControllerDelegate.swift; sourceTree = "<group>"; };
+		1876E3451F0F32250026409E /* TViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TViewController.swift; sourceTree = "<group>"; };
+		1876E3471F0F339A0026409E /* Third.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
+		1876E3491F0F33B50026409E /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		1876E34B1F0F3A220026409E /* ModalTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransitionDelegate.swift; sourceTree = "<group>"; };
+		1876E34D1F0F3A650026409E /* ModalAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalAnimationController.swift; sourceTree = "<group>"; };
+		1876E34F1F0F3B5E0026409E /* ModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
+		1876E3511F0F49430026409E /* PresentingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentingViewController.swift; sourceTree = "<group>"; };
+		1876E3531F0F49530026409E /* PresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
 		187DC2091F0B456800D8D4E3 /* LoginUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUtil.swift; sourceTree = "<group>"; };
 		187DC2131F0B6E1B00D8D4E3 /* SecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecViewController.swift; sourceTree = "<group>"; };
 		187DC2891F0B99EE00D8D4E3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -468,11 +478,10 @@
 		186772201F0DCE5B006C59E3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				186772221F0DCE6C006C59E3 /* TransitionDismiss.swift */,
-				186772231F0DCE6C006C59E3 /* TransitionInteractive.swift */,
-				186772241F0DCE6C006C59E3 /* TransitionPresent.swift */,
-				186772251F0DCE6C006C59E3 /* TransitionPresentedManager.swift */,
-				1867723D1F0DD065006C59E3 /* TransitionViewDelegate.swift */,
+				1876E34D1F0F3A650026409E /* ModalAnimationController.swift */,
+				1876E3401F0F21B10026409E /* TransitonAnimatonManager.swift */,
+				1876E34B1F0F3A220026409E /* ModalTransitionDelegate.swift */,
+				1876E34F1F0F3B5E0026409E /* ModalPresentationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -480,6 +489,8 @@
 		186772211F0DCE5B006C59E3 /* Drawer */ = {
 			isa = PBXGroup;
 			children = (
+				1876E3511F0F49430026409E /* PresentingViewController.swift */,
+				1876E3531F0F49530026409E /* PresentedViewController.swift */,
 			);
 			path = Drawer;
 			sourceTree = "<group>";
@@ -803,6 +814,7 @@
 				187DC3711F0B9AE900D8D4E3 /* TabbReuseHeaderView.swift */,
 				187DC3731F0B9AE900D8D4E3 /* TabViewDataSource.swift */,
 				187DC3741F0B9AE900D8D4E3 /* TabViewDelegate.swift */,
+				1876E3421F0F23FB0026409E /* TabBarControllerDelegate.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -918,8 +930,11 @@
 			isa = PBXGroup;
 			children = (
 				1888D13B1F00AD0700789723 /* HomeViewController.swift */,
+				1876E3451F0F32250026409E /* TViewController.swift */,
 				187DC2131F0B6E1B00D8D4E3 /* SecViewController.swift */,
 				187DC3821F0B9B6900D8D4E3 /* Storyboard.storyboard */,
+				1876E3471F0F339A0026409E /* Third.storyboard */,
+				1876E3491F0F33B50026409E /* ThirdViewController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -1122,6 +1137,7 @@
 				1867721B1F0DC21A006C59E3 /* qrcode_scanline_qrcode@3x.png in Resources */,
 				186772BC1F0DD373006C59E3 /* README.txt in Resources */,
 				187DC30A1F0B99EE00D8D4E3 /* MJRefresh.bundle in Resources */,
+				1876E3481F0F339A0026409E /* Third.storyboard in Resources */,
 				1867721A1F0DC21A006C59E3 /* qrcode_scanline_qrcode@2x.png in Resources */,
 				187DC3861F0B9B9100D8D4E3 /* Assets.xcassets in Resources */,
 				1867720D1F0DBEC9006C59E3 /* img_kong_zuchedd@3x.png in Resources */,
@@ -1160,7 +1176,6 @@
 				187DC31F1F0B99EE00D8D4E3 /* SDWebImageDownloaderOperation.m in Sources */,
 				187DC3791F0B9AE900D8D4E3 /* TabbReuseHeaderView.swift in Sources */,
 				188359751F0C6ED40023ECEF /* FMDatabaseAdditions.m in Sources */,
-				186772291F0DCE6C006C59E3 /* TransitionPresentedManager.swift in Sources */,
 				187DC36B1F0B9ABB00D8D4E3 /* RequestPort.swift in Sources */,
 				187DC3101F0B99EE00D8D4E3 /* TAAbstractDotView.m in Sources */,
 				187DC34E1F0B9A7400D8D4E3 /* AppNet.swift in Sources */,
@@ -1170,25 +1185,27 @@
 				187DC3221F0B99EE00D8D4E3 /* UIButton+WebCache.m in Sources */,
 				188359771F0C6ED40023ECEF /* FMDatabaseQueue.m in Sources */,
 				187DC3601F0B9A9600D8D4E3 /* ProgressView.swift in Sources */,
-				186772261F0DCE6C006C59E3 /* TransitionDismiss.swift in Sources */,
 				187DC30F1F0B99EE00D8D4E3 /* UIView+MJExtension.m in Sources */,
 				187DC3021F0B99EE00D8D4E3 /* MJRefreshAutoNormalFooter.m in Sources */,
 				187DC3631F0B9A9600D8D4E3 /* SudokuView.swift in Sources */,
 				1867722F1F0DCEB7006C59E3 /* ScrollerView+extension.swift in Sources */,
-				186772271F0DCE6C006C59E3 /* TransitionInteractive.swift in Sources */,
 				187DC37C1F0B9AE900D8D4E3 /* TabViewDelegate.swift in Sources */,
+				1876E3411F0F21B10026409E /* TransitonAnimatonManager.swift in Sources */,
 				187DC34F1F0B9A7400D8D4E3 /* AppUtil.swift in Sources */,
 				186772321F0DCEB7006C59E3 /* UIView+Extension.swift in Sources */,
 				187DC3501F0B9A7400D8D4E3 /* CheckAppVersion.swift in Sources */,
 				187DC3171F0B99EE00D8D4E3 /* MKAnnotationView+WebCache.m in Sources */,
 				187DC2151F0B6E1B00D8D4E3 /* SecViewController.swift in Sources */,
 				187DC31A1F0B99EE00D8D4E3 /* SDImageCache.m in Sources */,
+				1876E3501F0F3B5E0026409E /* ModalPresentationController.swift in Sources */,
 				1888D1401F00AD2200789723 /* MeViewController.swift in Sources */,
 				187DC3241F0B99EE00D8D4E3 /* UIImage+MultiFormat.m in Sources */,
 				187DC2FB1F0B99EE00D8D4E3 /* MBProgressHUD.m in Sources */,
 				1867723B1F0DCEEB006C59E3 /* CreateQRCodeViewController.swift in Sources */,
+				1876E34E1F0F3A650026409E /* ModalAnimationController.swift in Sources */,
 				187DC30E1F0B99EE00D8D4E3 /* UIScrollView+MJRefresh.m in Sources */,
 				187DC35E1F0B9A9600D8D4E3 /* GuideViewController.swift in Sources */,
+				1876E3431F0F23FB0026409E /* TabBarControllerDelegate.swift in Sources */,
 				187DC3161F0B99EE00D8D4E3 /* UIView+SDExtension.m in Sources */,
 				187DC20A1F0B456800D8D4E3 /* LoginUtil.swift in Sources */,
 				187DC31C1F0B99EE00D8D4E3 /* SDWebImageCompat.m in Sources */,
@@ -1205,8 +1222,8 @@
 				187DC34D1F0B9A7400D8D4E3 /* AppManager.swift in Sources */,
 				1867723C1F0DCEEB006C59E3 /* QRCodeViewController.swift in Sources */,
 				187DC3511F0B9A7400D8D4E3 /* DateManager.swift in Sources */,
+				1876E3521F0F49430026409E /* PresentingViewController.swift in Sources */,
 				187DC3521F0B9A7400D8D4E3 /* FMDBManager.swift in Sources */,
-				1867723E1F0DD065006C59E3 /* TransitionViewDelegate.swift in Sources */,
 				187DC2FC1F0B99EE00D8D4E3 /* MJRefreshAutoFooter.m in Sources */,
 				187DC3761F0B9AE900D8D4E3 /* BaseTabBarViewController.swift in Sources */,
 				186772301F0DCEB7006C59E3 /* UIImage+Extension.swift in Sources */,
@@ -1217,6 +1234,7 @@
 				187DC3291F0B99EE00D8D4E3 /* UIView+WebCacheOperation.m in Sources */,
 				187DC31B1F0B99EE00D8D4E3 /* SDImageCacheConfig.m in Sources */,
 				187DC2FE1F0B99EE00D8D4E3 /* MJRefreshComponent.m in Sources */,
+				1876E34C1F0F3A220026409E /* ModalTransitionDelegate.swift in Sources */,
 				187DC31E1F0B99EE00D8D4E3 /* SDWebImageDownloader.m in Sources */,
 				187DC3061F0B99EE00D8D4E3 /* MJRefreshBackStateFooter.m in Sources */,
 				187DC2FF1F0B99EE00D8D4E3 /* MJRefreshFooter.m in Sources */,
@@ -1226,10 +1244,11 @@
 				188359781F0C6ED40023ECEF /* FMResultSet.m in Sources */,
 				187DC3131F0B99EE00D8D4E3 /* TAPageControl.m in Sources */,
 				187DC3121F0B99EE00D8D4E3 /* TADotView.m in Sources */,
+				1876E3541F0F49530026409E /* PresentedViewController.swift in Sources */,
 				187DC36A1F0B9ABB00D8D4E3 /* OtherData.swift in Sources */,
 				187DC3081F0B99EE00D8D4E3 /* MJRefreshNormalHeader.m in Sources */,
-				186772281F0DCE6C006C59E3 /* TransitionPresent.swift in Sources */,
 				187DC30D1F0B99EE00D8D4E3 /* UIScrollView+MJExtension.m in Sources */,
+				1876E3461F0F32250026409E /* TViewController.swift in Sources */,
 				188359741F0C6ED40023ECEF /* FMDatabase.m in Sources */,
 				187DC3251F0B99EE00D8D4E3 /* UIImage+WebP.m in Sources */,
 				187DC37B1F0B9AE900D8D4E3 /* TabViewDataSource.swift in Sources */,
@@ -1239,6 +1258,7 @@
 				187DC2FD1F0B99EE00D8D4E3 /* MJRefreshBackFooter.m in Sources */,
 				187DC35F1F0B9A9600D8D4E3 /* PickerView.swift in Sources */,
 				187DC3261F0B99EE00D8D4E3 /* UIImageView+HighlightedWebCache.m in Sources */,
+				1876E34A1F0F33B50026409E /* ThirdViewController.swift in Sources */,
 				186772311F0DCEB7006C59E3 /* UITableView+Extension.swift in Sources */,
 				187DC3621F0B9A9600D8D4E3 /* SelectPhoto.swift in Sources */,
 				187DC30C1F0B99EE00D8D4E3 /* NSBundle+MJRefresh.m in Sources */,

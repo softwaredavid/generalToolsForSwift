@@ -11,7 +11,7 @@ import UIKit
 class TimeUtil: NSObject {
     
     // MARK: ------倒计时
-    var t: DispatchSourceTimer?
+    private var t: DispatchSourceTimer?
     
     func timeDown(second: Int, excue: @escaping ((Int) -> ()), end: @escaping (() -> ())) {
         func stop() {

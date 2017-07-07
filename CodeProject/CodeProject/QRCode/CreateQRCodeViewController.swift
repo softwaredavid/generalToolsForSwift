@@ -47,7 +47,6 @@ class CreateQRCodeViewController: NSObject {
     }
     /**
      生成高清二维码
-     
      - parameter image: 需要生成原始图片
      - parameter size:  生成的二维码的宽高
      */
