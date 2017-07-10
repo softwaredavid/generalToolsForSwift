@@ -94,6 +94,21 @@ class HomeViewController: BaseViewController {
          }
 
          }
+         let btn = UIButton(type: .system)
+         btn.frame = CGRect(x: 100, y: 100, width: 50, height: 50)
+         btn.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+         btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
+         view.addSubview(btn)
+         view.backgroundColor = UIColor.brown
+         
+         let ma =  FMDBManager.shareFMDBManager
+         ma.createDB(name: "maintab.sqlite")
+         ma.createTable(name: "appTable")
+         ma.insertInTable(name: "heheh", para: ["nane"])
+         //ma.dropTable(name: "")
+         //ma.clearTable(name: "")
+         ma.updateTable(name: "", key: [""], value: [""])
+         ma.selectData()
          */
         
 //       let wek =  DateManager.getHoursFromDate(date: Date())
@@ -104,14 +119,14 @@ class HomeViewController: BaseViewController {
 //        //m.updateTable(name: "appstate", key: ["1"], value: ["世界"])
 //        m.clearTable(name: "appstate")
         
+        AppNet.getAuthorization(url: "https://192.168.1.200:9443/api/view/home/sliders", paras: nil, header: ["Authorization":"bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiYXBpIl0sInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1MDEzMDA1ODEsImF1dGhvcml0aWVzIjpbIlJPTEVfVFJVU1RFRF9DTElFTlQiLCJST0xFX0NMSUVOVCJdLCJqdGkiOiJjNDhmMDA3Ny01MzgzLTQzMjktYmUyOS05MWQzZTc1OTk5MTUiLCJjbGllbnRfaWQiOiJ3ZGx0LWNsaWVudC10cmF2ZWwtZ3VpZGUifQ.ldYCjoJ7k2CPMhtcW5gbExKFKTUYQ-yFJCSgtU-020o"], userName: "wdlt-client-travel-guide", passWord: "1a2730fc771f359db9ebe14b45b02705") { (response) in
+            print(response)
+            let a = (response as! [String: Any]) as NSDictionary
+            let s = ConvertData.convertModel(jsonData: a, className: F()) as! F
+            print(s)
+            
+        }
         
-        let btn = UIButton(type: .system)
-        btn.frame = CGRect(x: 100, y: 100, width: 50, height: 50)
-        btn.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
-        btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
-        view.addSubview(btn)
-        view.backgroundColor = UIColor.brown
-
     }
     
     //var select: SelectPhoto = SelectPhoto()
