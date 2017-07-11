@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateQRCodeViewController: NSObject {
+class CreateQRCodeViewController: UIViewController {
 
     func createQRCode(text: String) -> UIImage? {
         // 1.创建滤镜

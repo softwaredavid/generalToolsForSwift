@@ -38,10 +38,10 @@ class QRCodeViewController: UIViewController {
         scanQRCode()
         startAnimation()
         
-        let btn = UIButton.init(frame: CGRect.init(x: 100, y: 100, width: 200, height: 200))
-        btn.backgroundColor = UIColor.red
-        btn.addTarget(self, action: #selector(btnc), for: .touchUpInside)
-        view.addSubview(btn)
+//        let btn = UIButton(frame: CGRect.init(x: 100, y: 100, width: 200, height: 200))
+//        btn.backgroundColor = UIColor.red
+//        btn.addTarget(self, action: #selector(btnc), for: .touchUpInside)
+//        view.addSubview(btn)
     }
     func btnc() {
         getQrCodeFromPhoto()
